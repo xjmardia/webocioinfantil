@@ -1,0 +1,97 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css?family=Butterfly+Kids&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lakki+Reddy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+/*Fuentes*/
+
+.navbar-nav > li{
+  padding-left:50px;
+  padding-right:50px;
+}
+.fila-imagenes > .col-3{
+	margin-top: 30px;
+}
+.pagination{
+	margin: 30px 0px;
+}
+body{
+	background-image: url(img/fondoBg.png);
+}
+
+.niños{
+	width: 300px;
+	height: 190px;
+}
+
+.iconos{
+	width:60px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.banner{
+	margin-top: 15px;
+	border: solid;
+	border-radius: 5px;
+}
+.bannerPS4{
+	width: 100%;
+	height: 60%;
+}
+.titulo{
+	text-align: center;
+	margin-top: -85px;
+	font-family: 'Permanent Marker', cursive;
+}
+.tituloReservas{
+	text-align: center;
+	margin: 15px 0 15px;
+	font-family: 'Permanent Marker', cursive;
+}
+.card-body{
+	font-family: 'Butterfly Kids', cursive;
+	font-size: 20px;
+}
+.txtInicio{
+	font-family: 'Permanent Marker', cursive;
+}
+.txtReservas{
+	font-family: 'Luckiest Guy', cursive;
+}
+.texto-abajo,label{
+	font-family: 'Righteous', cursive;
+}
+.carousel-caption{
+	font-family: 'Lakki Reddy', cursive;
+}
+.tituloContacto{
+	text-align: right;
+}
+
+/*Mediaquery para móviles*/
+@media (min-width: 320px) and (max-width: 480px) {
+
+.tituloContacto{
+	text-align: center;
+}
+
+  .titulo{
+  	margin: -15px 0 15px;
+  }
+
+  .iconos{
+  	width: 28px;
+  	padding: 0 2px;
+  } 
+
+  .icono-abajo{
+  	width: 80%;
+  	height: 80%;
+  }
+  .texto-abajo{
+  	font-size: 10px;
+  }
+
+
+}
