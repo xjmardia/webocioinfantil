@@ -66,9 +66,7 @@ body{
 .tituloContacto{
 	text-align: right;
 }
-.img-thumbnail{
-	margin-bottom: 20px;
-}
+
 /*Mediaquery para móviles*/
 @media (min-width: 320px) and (max-width: 480px) {
 
