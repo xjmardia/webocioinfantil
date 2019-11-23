@@ -6,6 +6,10 @@
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
 /*Fuentes*/
 
+audio{
+	width: 100%;
+}
+
 .navbar-nav > li{
   padding-left:50px;
   padding-right:50px;

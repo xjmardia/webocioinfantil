@@ -53,9 +53,8 @@
 			<h6 class="txtReservas">
 				<i>*Consultar catálogo de precios</i>
 			</h6>
-			<video width="100%" height="240" controls autoplay>
-				<source src="vid/castillo.mp4" type="video/mp4" media="">
-				Tu navegador no soporta este vídeo.
+			<video id="video" width="530" height="375" controls autoplay>
+				<source src="vid/castillo.mp4" type="video/mp4"/>
 			</video>
 			<!-- <img class="banner mx-auto d-block" width="70%" src="img/imgReservas.png"> -->
 		</div>
@@ -112,5 +111,14 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- Scritp para deter autoplay en dispositivos pequeños -->
+<!-- <script type="text/javascript">
+	  var screenWidth = window.innerWidth;
+	  if (screenWidth < 200)
+	  {
+	  	let video = document.getElementById('video');
+	  	video.removeAttribute('autoplay');
+	  };
+</script> -->
 </body>
 </html>
