@@ -10,6 +10,23 @@ audio{
 	width: 100%;
 }
 
+#masAnimacion{
+	font-size: 7em;
+	color: #c046fe;
+	transition: all 1s linear;
+	text-align: center;
+	float: left;
+	top: -14.8%;
+	position: absolute;
+	transform-origin: center;
+	animation: movimientoIndex 4s infinite linear;
+}
+@keyframes movimientoIndex{
+	from{transform: translateX(0vw) rotate(-2turn)}
+	50%{transform: translateX(52vw) rotate(2turn)}
+	to{transform: translateX(0vw) rotate(-2turn)}
+}
+
 .navbar-nav > li{
   padding-left:50px;
   padding-right:50px;
