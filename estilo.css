@@ -7,13 +7,14 @@
 /*Fuentes*/
 
 audio{
-	width: 100%;
+	float: right;
+	width: 40%;
+	margin-top: 15px;
 }
 
-#masAnimacion{
+#animacionBarra{
 	font-size: 7em;
 	color: #c046fe;
-	transition: all 1s linear;
 	text-align: center;
 	float: left;
 	top: -14.8%;
@@ -22,9 +23,28 @@ audio{
 	animation: movimientoIndex 4s infinite linear;
 }
 @keyframes movimientoIndex{
-	from{transform: translateX(0vw) rotate(-2turn)}
-	50%{transform: translateX(52vw) rotate(2turn)}
-	to{transform: translateX(0vw) rotate(-2turn)}
+	from{color:#c046fe;transform: translateX(0vw) rotate(-2turn)}
+	25%,75%{color:#00ffff}
+	50%{color:#fc3692;transform: translateX(52vw) rotate(2turn)}
+	to{color:#c046fe;transform: translateX(0vw) rotate(-2turn)}
+}
+
+.menu{
+	transition: all 0.2s linear;
+}
+
+.menu:hover{
+	transform: scale(1.1);
+}
+
+#niño{
+	opacity: 0;
+	transition: all 0.6s ease;
+}
+
+#niño:hover{
+	opacity: 1;
+	transform: scale(1.1) rotate(1turn);
 }
 
 .navbar-nav > li{
@@ -54,6 +74,17 @@ picture{
 	padding-left: 5px;
 	padding-right: 5px;
 }
+
+.iconos:hover{
+	animation: tiembla 0.2s infinite linear;
+}
+
+@keyframes tiembla {
+  0%  { transform:rotate(-3deg); }
+  50% { transform:rotate( 0deg) scale(1.1); }
+  100%{ transform:rotate( 3deg);}
+}
+
 .banner{
 	margin-top: 15px;
 	border: solid;
@@ -73,6 +104,16 @@ picture{
 	margin: 15px 0 15px;
 	font-family: 'Permanent Marker', cursive;
 }
+
+.tit{
+	letter-spacing: 0px;
+	transition: letter-spacing 0.3s;
+}
+
+.tit:hover{
+	letter-spacing: 5px;
+}
+
 .card-body{
 	font-family: 'Butterfly Kids', cursive;
 	font-size: 20px;
@@ -96,6 +137,10 @@ picture{
 /*Mediaquery para móviles*/
 @media (min-width: 320px) and (max-width: 480px) {
 
+audio{
+	width: 100%;
+}
+
 .tituloContacto{
 	text-align: center;
 }
@@ -114,3 +159,5 @@ picture{
   	font-size: 10px;
   }
 }
+
+@media (max-width: 992px){audio{width: 100%}}
